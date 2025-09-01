@@ -1,5 +1,5 @@
-﻿using LMS.Application.BookHandler.BookCommand;
-using LMS.Application.BookHandler.BookQuery;
+﻿using LMS.Application.Handlers.Book.BookCommand;
+using LMS.Application.Handlers.Book.BookQuery;
 using LMS.Application.DTOs;
 using LMSAPI.Domain.Entities;
 using MediatR;

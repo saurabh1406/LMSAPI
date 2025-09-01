@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace LMS.Application.MemberHandler.Command
+namespace LMS.Application.Handlers.Member.Command
 {
     public record AddMemberCommand(MemberDetailsDTO member) : IRequest<MemberDetailsDTO>;
 

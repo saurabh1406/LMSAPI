@@ -21,6 +21,8 @@ namespace LMS.Infrasturcture
             });
             services.AddScoped<IBookDetails, BookDetailsReposity>();
             services.AddScoped<IMemberDetails, MemberDetailsReposity>();
+            services.AddScoped<IUsers, UserLoginRepository>();
+            services.AddScoped<ITokens, JwtTokenServices>();
             return services;
         }
     }

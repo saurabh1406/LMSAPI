@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LMS.Application.MemberHandler.Command
+namespace LMS.Application.Handlers.Member.Command
 {
     public record UpdateMemberCommand(MemberDetailsDTO member) : IRequest<MemberDetailsDTO>;
 

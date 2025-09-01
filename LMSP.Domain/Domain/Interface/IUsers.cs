@@ -5,7 +5,7 @@ namespace LMSAPI.Domain.Interface
 {
     public interface IUsers
     {
-        Task<Users> GetUserByIdAsync(Guid userId);
+        Task<Users> GetUserByEmailIdAsync(string email);
         Task<IEnumerable<Users>> GetAllUsersAsync();
         Task<Users> AddUserAsync(Users user);
         Task<Users> UpdateUserAsync(Users user);

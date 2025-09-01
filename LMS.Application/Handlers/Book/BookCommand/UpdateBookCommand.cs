@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LMS.Application.BookHandler.BookCommand
+namespace LMS.Application.Handlers.Book.BookCommand
 {
    public record UpdateBookCommand(Guid Id, BookDetailsDTO BookDetails) : IRequest<BookDetailsDTO>;
     public class UpdateBookHandler(IBookDetails bookDetailsRepo, IMapper _mapper) : IRequestHandler<UpdateBookCommand, BookDetailsDTO>

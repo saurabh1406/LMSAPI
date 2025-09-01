@@ -1,4 +1,7 @@
-﻿using LMS.Application.Common.Mappings;
+﻿using FluentValidation;
+using LMS.Application.Common.Mappings;
+using LMS.Application.Common.Validator;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -17,6 +20,12 @@ namespace LMS.Application
             // Example: services.AddScoped<IYourService, YourServiceImplementation>();
             services.AddMediatR(cfg =>cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
             services.AddAutoMapper(typeof(BookDetailsMapping).Assembly);
+
+            // Register FluentValidation
+            services.AddValidatorsFromAssemblyContaining<CreateUserValidatior>();
+
+            // Register Validation Behavior
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehaviour<,>));
 
             return services;
         }

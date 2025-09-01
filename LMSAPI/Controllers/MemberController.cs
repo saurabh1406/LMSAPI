@@ -1,6 +1,6 @@
 ﻿using LMS.Application.DTOs;
-using LMS.Application.MemberHandler.Command;
-using LMS.Application.MemberHandler.Query;
+using LMS.Application.Handlers.Member.Command;
+using LMS.Application.Handlers.Member.Query;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

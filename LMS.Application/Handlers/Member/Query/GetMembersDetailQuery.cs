@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LMS.Application.MemberHandler.Query
+namespace LMS.Application.Handlers.Member.Query
 {
     public record GetMembersDetailQuery : IRequest<List<MemberDetailsDTO>>;
 

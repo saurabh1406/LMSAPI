@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LMS.Application.BookHandler.BookQuery
+namespace LMS.Application.Handlers.Book.BookQuery
 {
     public record GetAllBooksQuery : IRequest<List<BookDetailsDTO>>;
 

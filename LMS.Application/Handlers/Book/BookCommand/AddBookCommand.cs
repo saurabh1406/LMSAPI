@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LMS.Application.BookHandler.BookCommand
+namespace LMS.Application.Handlers.Book.BookCommand
 {
     public record AddBookCommand(BookDetailsDTO BookDetailsdto) : IRequest<BookDetailsDTO>;
 
